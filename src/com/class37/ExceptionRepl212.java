@@ -1,0 +1,23 @@
+package com.class37;
+
+public class ExceptionRepl212 {
+	/*
+	 * Exception Handling, Complete the code, handle the possible exceptions that
+	 * Output: / by zero
+	 */
+
+	public static void main(String[] args) {
+		int a = 10, b = 0, result;
+
+		// try block
+		try {
+			result = a / b;
+			System.out.println("Result = " + result);
+		}
+
+		// catch block
+		catch (ArithmeticException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}
